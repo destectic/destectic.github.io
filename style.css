@@ -8,8 +8,8 @@
 
 .mix {
   position: relative;
-  width: 185px;
-  height: 185px;
+  width: 180px;
+  height: 180px;
   overflow: hidden;
   display: none; /* changed from none to flex to enable the flexbox layout */
   justify-content: center;
