@@ -119,6 +119,13 @@ a:hover {
     color: #FFFFFF;
 }
 
+.destectic_sub-style {
+    font-family: 'Segoe UI', sans-serif;
+    margin-right: 9px; /* Adjust space between DESTECTIC and DTTESTEST */
+    color: #FFFFFF;
+}
+
+
 .destectic_full-style {
     font-family: 'Segoe UI', sans-serif;
     font-size: smaller; /* Specify smaller font size; you can use specific px or em values instead */
@@ -126,4 +133,22 @@ a:hover {
     color: #FFFFFF;
 }
 
+.flex-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.sapl_logo {
+    /*display: block;*/
+    height: 35px; /* Adjust as needed */
+    width: 186px;
+    background-image: url('imgs/uc_sapl_3l_white.png');
+    background-size: cover;
+    /*vertical-align: middle;*/
+    margin-left: 10px;
+}
+
+.sapl_logo:hover {
+    background-image: url('imgs/uc_sapl_3l_red.png');
+}
 
