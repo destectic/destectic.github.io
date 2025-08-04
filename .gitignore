@@ -1,0 +1,10 @@
+# IDE 설정 파일
+.idea/
+*.iml
+
+
+# 배포 도우미 스크립트
+deploy_website.bat
+
+# 기타 무시하고 싶은 파일
+website_draft.docx

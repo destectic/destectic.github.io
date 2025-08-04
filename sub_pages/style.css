@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 77%;
+  margin: 5em auto;;
+}
+
+.mix {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  display: none; /* changed from none to flex to enable the flexbox layout */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.3em;
+  cursor: pointer;
+  border: 1px solid #666;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF; /* text color */
+  background-size: cover;
+  background-position: center;
+}
+
+.mix::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(35, 41, 122, 0.65); /* black with 0.55 opacity */
+  z-index: 1; /* positions the overlay above the background image but below the text */
+}
+
+
+.about {
+  background-color: none;
+  color: #FFFFFF;
+}
+
+.research {
+	background-color: none;
+	color: #FFFFFF;
+}
+
+.contact {
+  background-color: none;
+  color: #FFFFFF;
+}
+
+.education {
+  background-color: none;
+  color: #FFFFFF;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #b30000;
+  padding: 0em;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+button:hover {
+  color: #cccccc;
+}
+input {
+  padding: 0.2em;
+  font-family: 'Segoe UI', sans-serif;
+  outline: none;
+}
+
+
+tt {
+  line-height: 0px;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%; /* positions the left edge of the element at the horizontal center of the parent */
+  transform: translate(-50%, -50%); /* shifts the element left and up by half of its own width and height, respectively */
+  /*font-weight: 2em;*/
+}
+.mainText {
+  font-family: 'Segoe UI', sans-serif;
+  color: #FFFFFF;
+}
+.filter {
+  font-family: 'Segoe UI', sans-serif;
+  color: #FFFFFF;
+}
+.tail {
+  font-family: 'Segoe UI', sans-serif;
+  color: #FFFFFF;
+}
+
+a {
+	color: #FFFFFF;
+	transition: all 0.2s;
+	text-decoration: none;
+  /* no underline */
+}
+a:hover {
+
+  /*opacity: .7;*/
+  color: #ff0000;
+  /*font-weight: bolder;*/
+}
+
+.destectic-style {
+    font-family: 'Segoe UI', sans-serif;
+    margin-right: 20px; /* Adjust space between DESTECTIC and DTTESTEST */
+    color: #FFFFFF;
+}
+
+.destectic_full-style {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: smaller; /* Specify smaller font size; you can use specific px or em values instead */
+    font-weight: normal; /* This will make the font non-bold */
+    color: #FFFFFF;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.sapl_logo {
+    /*display: block;*/
+    height: 35px; /* Adjust as needed */
+    width: 186px;
+    background-image: url('../imgs/uc_sapl_3l_white.png');
+    background-size: cover;
+    /*vertical-align: middle;*/
+    margin-left: 10px;
+}
+
+.sapl_logo:hover {
+    background-image: url('../imgs/uc_sapl_3l_red.png');
+}
+
+
+.indent {
+    text-indent: -1em;
+    padding-left: 1em;
+    display: block;
+    margin-bottom: 0; /* Adjust this value as needed */
+    font-size: smaller;
+
+}
+
