@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jinmo Rhee</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" id="siteFavicon" type="image/png" href="imgs/destectic_ico.png">
+  <script>
+    (function() {
+      var isLab = (location.hostname.indexOf('destectic') !== -1)
+        || (new URLSearchParams(location.search).get('mode') === 'lab');
+      var fav = document.getElementById('siteFavicon');
+      if (!fav) return;
+      if (isLab) {
+        fav.type = 'image/png';
+        fav.href = 'imgs/destectic_ico.png';
+      } else {
+        fav.type = 'image/x-icon';
+        fav.href = 'favicon.ico';
+      }
+    })();
+  </script>
 </head>
 <body>
 
